@@ -104,25 +104,45 @@
 <body class="font-sans font-bold antialiased overflow-x-hidden">
 
   <nav class="fixed top-0 w-full z-50 bg-neo-bg border-b-4 border-neo-black">
-    <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-      <div
-        class="font-black text-2xl uppercase tracking-tighter bg-neo-yellow px-3 py-1 border-4 border-neo-black shadow-neo-sm -rotate-2">
-        Nasi Goreng Modern
-      </div>
-      <div class="hidden md:flex items-center space-x-8">
-        <a class="text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
-          href="index.html">Beranda</a>
-        <a class="text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
-          href="menu.html">Menu</a>
-        <a class="text-lg uppercase font-black border-b-4 border-neo-black pb-1 hover:text-neo-red transition-colors w-max"
-          href="about.html">Tentang Kami</a>
-        <a class="text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
-          href="kontak.html">Kontak</a>
-        <a class="text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
-          href="blog.html">Blog</a>
+      <div class="flex justify-between items-center px-4 md:px-6 py-4 max-w-7xl mx-auto flex-wrap">
+          <div
+              class="font-black text-xl md:text-2xl uppercase tracking-tighter bg-neo-yellow px-3 py-1 border-4 border-neo-black shadow-neo-sm -rotate-2">
+              Nasi Goreng Modern
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+              <a class="text-base sm:text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
+                  href="index.html">Beranda</a>
+              <a class="text-base sm:text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
+                  href="menu.html">Menu</a>
+              <a class="text-base sm:text-lg uppercase font-black border-b-4 border-neo-black pb-1 hover:text-neo-red transition-colors w-max"
+                  href="about.html">Tentang Kami</a>
+              <a class="text-base sm:text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
+                  href="kontak.html">Kontak</a>
+              <a class="text-base sm:text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
+                  href="blog.html">Blog</a>
+          </div>
+
+          <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+              class="md:hidden bg-neo-white border-4 border-neo-black p-2 shadow-[4px_4px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center"
+              aria-label="Toggle Menu">
+              <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
       </div>
 
-    </div>
+      <div id="mobile-menu"
+          class="hidden md:hidden absolute top-full left-0 w-full bg-neo-bg border-b-4 border-neo-black shadow-neo-lg flex flex-col p-4 space-y-4">
+          <a class="text-lg font-bold uppercase border-4 border-neo-black bg-neo-white p-3 shadow-[4px_4px_0px_0px_#000] hover:bg-neo-yellow text-center transition-all"
+              href="index.html">Beranda</a>
+          <a class="text-lg font-bold uppercase border-4 border-neo-black bg-neo-white p-3 shadow-[4px_4px_0px_0px_#000] hover:bg-neo-yellow text-center transition-all"
+              href="menu.html">Menu</a>
+          <a class="text-lg font-black uppercase border-4 border-neo-black bg-neo-yellow p-3 shadow-[4px_4px_0px_0px_#000] text-center"
+              href="about.html">Tentang Kami</a>
+          <a class="text-lg font-bold uppercase border-4 border-neo-black bg-neo-white p-3 shadow-[4px_4px_0px_0px_#000] hover:bg-neo-yellow text-center transition-all"
+              href="kontak.html">Kontak</a>
+          <a class="text-lg font-bold uppercase border-4 border-neo-black bg-neo-white p-3 shadow-[4px_4px_0px_0px_#000] hover:bg-neo-yellow text-center transition-all"
+              href="blog.html">Blog</a>
+      </div>
   </nav>
 
   <main>
@@ -351,14 +371,15 @@
           </p>
 
           <div class="flex flex-col sm:flex-row justify-center gap-6">
-            <button
-              class="bg-neo-yellow text-neo-black border-4 border-neo-black px-10 py-5 font-black uppercase text-xl shadow-[6px_6px_0px_0px_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hover:bg-neo-black hover:text-neo-white hover:shadow-[6px_6px_0px_#FFD93D]">
+            <a href="menu.html"
+              class="bg-neo-yellow text-neo-black border-4 border-neo-black px-10 py-5 font-black uppercase text-xl shadow-[6px_6px_0px_0px_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hover:bg-neo-black hover:text-neo-white hover:shadow-[6px_6px_0px_#FFD93D] inline-block text-center">
               Lihat Menu
-            </button>
-            <button
-              class="bg-neo-white text-neo-black border-4 border-neo-black px-10 py-5 font-black uppercase text-xl shadow-[6px_6px_0px_0px_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hover:bg-neo-violet">
+            </a>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Nasi%20Goreng%20Modern."
+              target="_blank" rel="noopener noreferrer"
+              class="bg-neo-white text-neo-black border-4 border-neo-black px-10 py-5 font-black uppercase text-xl shadow-[6px_6px_0px_0px_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hover:bg-neo-violet inline-block text-center">
               Hubungi Kami
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -383,9 +404,9 @@
                 Tautan Cepat</h4>
             <a class="text-base sm:text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
                 href="index.html">Beranda</a>
-            <a class="text-base sm:text-lg uppercase font-black border-b-4 border-neo-black pb-1 hover:text-neo-red transition-colors w-max"
-                href="menu.html">Menu</a>
             <a class="text-base sm:text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
+                href="menu.html">Menu</a>
+            <a class="text-base sm:text-lg uppercase font-black border-b-4 border-neo-black pb-1 hover:text-neo-red transition-colors w-max"
                 href="about.html">Tentang Kami</a>
             <a class="text-base sm:text-lg uppercase font-bold hover:bg-neo-yellow hover:px-2 hover:border-4 hover:border-neo-black hover:shadow-neo-sm transition-all w-max"
                 href="kontak.html">Kontak</a>
